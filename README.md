@@ -1,9 +1,8 @@
 
 ## Supports:
 
-https://www.canva.com/design/DAGfErt9Phc/hCVDPiMGuJYpqHo3-f9e4w/
 
-
+https://www.canva.com/design/DAGfErt9Phc/s-wMOeFwsPFuiE6Q7DoT3A/view
 
 ## Configuration
 
