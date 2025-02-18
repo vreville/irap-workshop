@@ -21,7 +21,7 @@ https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Param%C3%A9trage-%C3%A0-la-
 check 
 
     mkdir ~/tmp/toto && cd ~/tmp/toto
-    git init  # see ./.git/
+    git init  # check .git/
     echo hello >> hello.txt 
     git add hello.txt
     git commit -am “init”
@@ -37,11 +37,29 @@ https://github.com/git/git/tree/master/contrib/completion
 
     wget https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh  ~/
     wget https://github.com/git/git/blob/master/contrib/completion/git-completion.bash  ~/
-    cat ~/.bashrc
-        . ~/git-prompt.sh
-        . ~/git-completion.bash
-        export GIT_PS1_SHOWCOLORHINTS=1
+    . ~/git-prompt.sh
+    . ~/git-completion.bash
+    export GIT_PS1_SHOWCOLORHINTS=1
     
 
+    # set forever
+    cat >> ~/.bashrc  << .END
+    . ~/git-prompt.sh
+    . ~/git-completion.bash
+    export GIT_PS1_SHOWCOLORHINTS=1
+    .END
 
+
+
+### More configuration
+
+    git config --global alias.l 'log --oneline'
+    git config --global alias.co checkout
+    git config --global alias.ci commit
+    git config --global alias.s 'status -suno'
+
+
+
+
+    git config alias.l 'log --graph --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
 
