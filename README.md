@@ -58,6 +58,7 @@ https://github.com/git/git/tree/master/contrib/completion
     git config --global alias.ci commit
     git config --global alias.s 'status -suno'
 
+    
 
 
 
