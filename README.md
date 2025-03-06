@@ -61,8 +61,6 @@ https://github.com/git/git/tree/master/contrib/completion
     git config --global alias.ci commit
     git config --global alias.s 'status -suno'
 
-    
-
 
 
     git config alias.l 'log --graph --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
